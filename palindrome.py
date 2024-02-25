@@ -5,6 +5,9 @@ def is_palindrome(s):
 def add_numbers(a, b):
     return a + b
 
+def sub_numbers(a, b):
+    return a - b
+
 def main():
     # Test the function
     input_string = input("Enter a string: ")
@@ -17,8 +20,10 @@ def main():
     num2 = float(input("Enter the second number: "))
     
     result = add_numbers(num1, num2)
+    result = sub_numbers(num1, num2)
     
     print("The sum of", num1, "and", num2, "is:", result)
+    print("The sub of", num1, "and", num2, "is:", result)
 
 if __name__ == "__main__":
     main()
